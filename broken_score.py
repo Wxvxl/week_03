@@ -2,7 +2,7 @@
 CP1404/CP5632 - Practical
 Broken program to determine score status
 """
-
+import random
 
 def get_score():
     score = float(input("Enter score: "))
@@ -28,4 +28,5 @@ def main():
     score = get_score()
     grade = check_grades(score)
     print(grade)
+    print(check_grades(random.randint(0,100)))
 
