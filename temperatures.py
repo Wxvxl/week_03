@@ -20,15 +20,19 @@ def convert_to_celsius():
     print("Result: {:.2f} C".format(celsius))
 
 
-print(MENU)
-choice = input(">>> ").upper()
-while choice != "Q":
-    if choice == "C":
-        convert_to_fahrenheit()
-    elif choice == "F":
-        convert_to_celsius()
-    else:
-        print("Invalid option")
+def main():
     print(MENU)
     choice = input(">>> ").upper()
-print("Thank you.")
+    while choice != "Q":
+        if choice == "C":
+            convert_to_fahrenheit()
+        elif choice == "F":
+            convert_to_celsius()
+        else:
+            print("Invalid option")
+        print(MENU)
+        choice = input(">>> ").upper()
+    print("Thank you.")
+
+
+main()
