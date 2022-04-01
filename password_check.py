@@ -2,7 +2,7 @@ MINIMUM_LENGTH = 10
 
 
 def get_password():
-    password = input("Please enter you password: ")
+    password = input("Please enter your password: ")
     while len(password) < MINIMUM_LENGTH:
         print("Password does not meet minimum length requirement")
         password = input("Please enter you password: ")
