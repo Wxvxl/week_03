@@ -27,7 +27,7 @@ def check_grades(score):
 def main():
     score = get_score()
     grade = check_grades(score)
-    print(f"Your grade is{grade}")
+    print(f"Your grade is {grade}")
     random_score = random.randint(0,100)
     print(f"The random score is {random_score}")
     print(f"Your grade is {check_grades(random_score)}")
